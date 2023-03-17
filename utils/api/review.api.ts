@@ -7,13 +7,13 @@ import { Review } from '../types/global.type';
 
 const reviewUrl = {
     listOfMedia: (mediaType: string, mediaId: string) =>
-        `http://localhost:3003/api/v1/review/media/${mediaType}/${mediaId}`,
-    listUser: 'http://localhost:3003/api/v1/review/list',
-    newReview: 'http://localhost:3003/api/v1/review/create',
+        `https://netflix-api-kappa.vercel.app/api/v1/review/media/${mediaType}/${mediaId}`,
+    listUser: 'https://netflix-api-kappa.vercel.app/api/v1/review/list',
+    newReview: 'https://netflix-api-kappa.vercel.app/api/v1/review/create',
     delete: (id: number | string) =>
-        `http://localhost:3003/api/v1/review/remove/${id}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/review/remove/${id}`,
     update: (id: number | string) =>
-        `http://localhost:3003/api/v1/review/update/${id}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/review/update/${id}`,
 };
 
 interface ReviewsMediaProps {

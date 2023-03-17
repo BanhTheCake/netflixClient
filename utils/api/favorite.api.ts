@@ -2,10 +2,10 @@ import { axiosPrivate } from '../config/axios.config';
 import requestApi from '../helpers/requestApi';
 import { Favorite } from './../types/global.type';
 const favoriteUrl = {
-    list: 'http://localhost:3003/api/v1/favorite/list',
-    create: 'http://localhost:3003/api/v1/favorite/create',
+    list: 'https://netflix-api-kappa.vercel.app/api/v1/favorite/list',
+    create: 'https://netflix-api-kappa.vercel.app/api/v1/favorite/create',
     delete: (id: number) =>
-        `http://localhost:3003/api/v1/favorite/remove/${id}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/favorite/remove/${id}`,
 };
 
 interface GetFavoriteRes {

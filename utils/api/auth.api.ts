@@ -3,11 +3,11 @@ import requestApi from '../helpers/requestApi';
 import { TR, User } from '../types/global.type';
 
 const authUrl = {
-    login: 'http://localhost:3003/api/v1/auth/login',
-    register: 'http://localhost:3003/api/v1/auth/register',
-    logout: (id: string) => `http://localhost:3003/api/v1/auth/logout/${id}`,
-    refresh: `http://localhost:3003/api/v1/auth/refreshToken`,
-    persist: 'http://localhost:3003/api/v1/auth/persist',
+    login: 'https://netflix-api-kappa.vercel.app/api/v1/auth/login',
+    register: 'https://netflix-api-kappa.vercel.app/api/v1/auth/register',
+    logout: (id: string) => `https://netflix-api-kappa.vercel.app/api/v1/auth/logout/${id}`,
+    refresh: `https://netflix-api-kappa.vercel.app/api/v1/auth/refreshToken`,
+    persist: 'https://netflix-api-kappa.vercel.app/api/v1/auth/persist',
 };
 
 interface LoginProps {

@@ -9,12 +9,15 @@ export async function middleware(request: NextRequest) {
         return NextResponse.redirect(new URL('/', request.url));
     }
 
-    const data = await fetch('http://localhost:3003/api/v1/auth/verifyRF', {
-        headers: {
-            cookie: `rfToken=${rfToken}`,
-        },
-        credentials: 'include',
-    });
+    const data = await fetch(
+        'https://netflix-api-kappa.vercel.app/api/v1/auth/verifyRF',
+        {
+            headers: {
+                cookie: `rfToken=${rfToken}`,
+            },
+            credentials: 'include',
+        }
+    );
 
     if (data.status !== 200) {
         const resp = NextResponse.redirect(new URL('/', request.url));

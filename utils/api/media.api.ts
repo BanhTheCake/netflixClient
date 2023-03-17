@@ -13,20 +13,20 @@ import requestApi from '../helpers/requestApi';
 
 const mediaUrl = {
     list: (mediaType: string, mediaCategory: string) =>
-        `http://localhost:3003/api/v1/media/list/${mediaType}/${mediaCategory}`,
-    genres: 'http://localhost:3003/api/v1/media/genres/movie',
+        `https://netflix-api-kappa.vercel.app/api/v1/media/list/${mediaType}/${mediaCategory}`,
+    genres: 'https://netflix-api-kappa.vercel.app/api/v1/media/genres/movie',
     details: (mediaType: string, mediaId: string | number) =>
-        `http://localhost:3003/api/v1/media/details/${mediaType}/${mediaId}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/details/${mediaType}/${mediaId}`,
     credits: (mediaType: string, mediaId: string | number) =>
-        `http://localhost:3003/api/v1/media/credits/${mediaType}/${mediaId}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/credits/${mediaType}/${mediaId}`,
     videos: (mediaType: string, mediaId: string | number) =>
-        `http://localhost:3003/api/v1/media/videos/${mediaType}/${mediaId}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/videos/${mediaType}/${mediaId}`,
     images: (mediaType: string, mediaId: string | number) =>
-        `http://localhost:3003/api/v1/media/images/${mediaType}/${mediaId}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/images/${mediaType}/${mediaId}`,
     recommends: (mediaType: string, mediaId: string | number) =>
-        `http://localhost:3003/api/v1/media/recommends/${mediaType}/${mediaId}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/recommends/${mediaType}/${mediaId}`,
     search: (mediaType: string) =>
-        `http://localhost:3003/api/v1/media/search/${mediaType}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/search/${mediaType}`,
 };
 
 interface MediaListProps {

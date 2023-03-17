@@ -5,9 +5,9 @@ import { Person } from '../types/global.type';
 
 const personUrl = {
     details: (id: string) =>
-        `http://localhost:3003/api/v1/media/person/details/${id}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/person/details/${id}`,
     combineCredits: (id: string) =>
-        `http://localhost:3003/api/v1/media/person/combinedCredits/${id}`,
+        `https://netflix-api-kappa.vercel.app/api/v1/media/person/combinedCredits/${id}`,
 };
 
 interface GetDetailsPersonProps {
